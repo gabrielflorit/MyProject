@@ -4,15 +4,22 @@ gulp.task('watch', function() {
 
 	// watch for changes to html
 	gulp.watch([
-		'html/*.html'
+		'html/*'
 	], ['html']);
 	gulp.watch([
-		'js/*.js'
+		'*.html'
 	], ['html']);
+	gulp.watch([
+		'js/*'
+	], ['html']);
+	gulp.watch([
+		'css/*'
+	], ['html']);
+
 
 	// watch for changes to sass
 	gulp.watch([
-		'dest/*',
+		'css/*',
 	], ['sass']);
 
 });

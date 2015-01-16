@@ -10,7 +10,8 @@
 				"node_modules"
 			],
 			"file_exclude_patterns": [
-				"aggregator.html",
+				"middle.html",
+				"index.html",
 				"graphic.sublime-project",
 				"gulpfile.js"
 			]

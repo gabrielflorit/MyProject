@@ -4,6 +4,7 @@ var fileinclude = require('gulp-file-include');
 var rename      = require('gulp-rename');
 var util        = require('gulp-util');
 
+
 gulp.task('html', function() {
 
 	var filename = 'middle.html';
@@ -12,5 +13,5 @@ gulp.task('html', function() {
 		.pipe(fileinclude())
 		.pipe(rename('index.html'))
 		.pipe(gulp.dest('./'))
-		.pipe(browserSync.reload({stream:true}));
+		.pipe(browserSync.reload({stream:true}))
 });
