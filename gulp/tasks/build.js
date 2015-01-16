@@ -7,7 +7,6 @@ gulp.task('build', function(done) {
 			'watch',
 			'html',
 			'browser-sync',
-			'sass',
-			'uglify'
+			'sass'
 		);
 });
